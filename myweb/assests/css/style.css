@@ -1,0 +1,81 @@
+
+header > nav > ul{
+    position: absolute;
+    right: 24px;
+    font-size: 20px;
+    top: 0;
+    list-style: none;
+}
+header > nav > ul > li {
+    display: inline-block;
+    cursor: pointer;
+    font-family: "Ubuntu Light";
+    padding: 10px;
+    color: #ffffff;
+}
+/* main content */
+.one{
+    width: auto;
+    height: 450px;
+    background-color: #403f3d;
+
+}
+
+.two{
+    width: auto;
+    height: 80px;
+    background-color: #c45252;
+
+}
+.three{
+    width: auto;
+    height: 350px;
+    background-color: #ffffff;
+
+}
+.four{
+    width: auto;
+    height: 400px;
+    background-color: #fed700;
+
+}
+.five{
+    width: auto;
+    height: 600px;
+    background-color: #ffffff;
+
+}
+.six{
+    width: auto;
+    height: 300px;
+    background-color: #ffedb8;
+
+}
+.seven{
+    width: auto;
+    height: 250px;
+    background-color: #fed700;
+
+}
+.eight{
+    width: auto;
+    height: 450px;
+    background-color: #ffffff;
+
+}
+.nine{
+    width: auto;
+    height: 80px;
+    background-color: #fed700;
+
+}
+
+footer{
+    width: auto;
+    height: 300px;
+    background-color: #403f3d;
+}
+footer>h1{
+    margin: 0;
+    color: #eeeeee;
+}
