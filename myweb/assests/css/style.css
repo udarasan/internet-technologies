@@ -90,35 +90,232 @@ main > section:nth-child(3) > div {
 
 }
 
-/*Section Five Start*/
+/* <<------------------Section Five Start------------------------>>> */
 .five {
     width: auto;
     height: 600px;
     background-color: #ffffff;
 
 }
+.five_section_title {
+}
+.five_section_title>h2{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding-top: 20px;
+}
+.five_section_title>p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skill-section{
+    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.skill-section-1{
+    width: 50%;
+    height: 100px;
+    float: left;
+    display: flex;
+}
+.skill-content-left{
+    width: 86%;
+    display: inline-block;
+}
+.skill-icon-left{
+    width: 14%;
+    display: inline-block;
+}
+.skill-icon-left>img{
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 100%;
+}
+.skill-content-left>h4{
+    margin: 7px 0px 0px 0px;
+    text-align: right;
+}
+.skill-content-left>p{
+    margin: 5px 0px 0px 0px;
+    text-align: right;
+    display: block;
+    font-size: 13px;
+}
+.progress-left{
+    width: 80px;
+    height: 6px;
+    background-color: #fed700;
+    border-radius: 30px;
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+/*--------------right side------*/
 
-/*Section Six Start*/
+.skill-content-right{
+    width: 86%;
+    display: inline-block;
+}
+.skill-icon-right{
+    width: 14%;
+    display: inline-block;
+}
+.skill-icon-right>img{
+    width: 50px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 100%;
+}
+.skill-content-right>h4{
+    margin: 7px 0px 0px 0px;
+    text-align: left;
+}
+.skill-content-right>p{
+    margin: 5px 0px 0px 0px;
+    text-align: left;
+    display: block;
+    font-size: 13px;
+}
+.progress-right{
+    width: 80px;
+    height: 6px;
+    background-color: #fed700;
+    border-radius: 30px;
+    float: left;
+    margin: 10px 0px 0px 0px;
+}
+.skill-btn{
+    margin-top: 30px;
+}
+
+/* <<------------------Section Six Start------------------------>>> */
 .six {
     width: auto;
-    height: 300px;
+    height: 350px;
     background-color: #ffedb8;
 
 }
 
 .six > div {
     width: 50%;
-    height: 300px;
+    height: 350px;
     display: inline-block;
     float: left;
+}
+
+.six_section_title > h2 {
+    margin: 0px 0px 0px 100px;
+    padding-top: 20px;
+}
+
+#toggle1 {
+    width: 350px;
+    height: 50px;
+    border: solid;
+    margin: 30px 30px 0px 200px;
+    background-color: white;
+
+}
+
+#toggle1 > h3 {
+    margin: 14px 0px 14px 10px;
+    vertical-align: middle;
+    position: absolute;
+    font-size: 20px;
+}
+
+#toggle2 {
+    width: 350px;
+    height: 50px;
+
+    border: solid;
+    margin: 5px 0px 0px 200px;
+    background-color: white;
+}
+
+#toggle2 > h3 {
+    margin: 14px 0px 14px 10px;
+    vertical-align: middle;
+    position: absolute;
+    font-size: 20px;
+}
+
+#toggle3 {
+    width: 350px;
+    height: 50px;
+    border: solid;
+    margin: 5px 0px 0px 200px;
+    background-color: white;
+}
+
+#toggle3 > h3 {
+    margin: 14px 0px 14px 10px;
+    vertical-align: middle;
+    position: absolute;
+    font-size: 20px;
+}
+
+#toggle4 {
+    width: 350px;
+    height: 50px;
+    border: solid;
+    margin: 5px 0px 0px 200px;
+    background-color: white;
+}
+
+#toggle4 > h3 {
+    margin: 14px 0px 14px 10px;
+    vertical-align: middle;
+    position: absolute;
+    font-size: 20px;
+}
+
+.quotes-square {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    margin: 0px 0px 0px 100px;
+    border: solid;
+    border-radius: 30px;
+    position: relative;
+    bottom: 50px;
+}
+
+.quotes-square > img {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
 }
 
 /*Section Seven Start*/
 .seven {
     width: auto;
-    height: 250px;
+    height: 300px;
     background-color: #fed700;
 
+}
+
+.seven-title > h2 {
+
+    margin: 0px 0px 0px 100px;
+    padding-top: 20px;
+}
+
+#top-comma > img {
+    width: 24px;
+    height: 24px;
+    margin: 30px 0px 0px 180px;
+}
+
+.recommendation > p {
+    margin: 0;
+}
+
+#bottom-comma > img {
+
+    width: 24px;
+    margin-left: 1300px;
 }
 
 /*Section Eight Start*/
@@ -128,82 +325,112 @@ main > section:nth-child(3) > div {
     background-color: #ffffff;
 
 }
-.eight_title{
-    background-color: aquamarine;
+
+.eight_title {
 }
 
 .eight_title > h2 {
-    height: 50px;
-    margin: 0px 0px 0px 80px;
+    margin: 0px 0px 0px 100px;
+    padding-top: 20px;
 
 }
-.blog-article{
+
+.recommendation {
+    margin: 0px 200px 0px 200px;
+
+}
+
+.blog-article {
     width: auto;
-    height: 320px;
-    margin: 0px 100px 0px 100px;
+    height: 300px;
+    margin: 30px 100px 0px 100px;
 }
-.blog-01{
-    background-color: #ff253a;
+
+.blog-01 {
 }
-.blog-img-01{
+
+.blog-img-01 {
     width: 300px;
-    height: 250px;
+    height: 200px;
     background-color: white;
     margin: auto;
 }
-.blog-Title-01{
+
+.blog-Title-01 {
     margin: 10px 70px 0px 70px;
 }
-.blog-description-01{
+
+.blog-description-01 {
     margin: 0px 70px 0px 70px;
     font-size: 13px;
 }
-.blog-02{
-    background-color: #5fff25;
+
+.blog-description-01 > p {
+    margin: 0;
 }
-.blog-img-02{
+
+.blog-02 {
+}
+
+.blog-img-02 {
 
     width: 300px;
-    height: 250px;
+    height: 200px;
     background-color: white;
     margin: auto;
 }
-.blog-Title-02{
+
+.blog-Title-02 {
     margin: 10px 70px 0px 70px;
 }
-.blog-description-02{
+
+.blog-description-02 {
     margin: 0px 70px 0px 70px;
     font-size: 13px;
 }
-.blog-03{
-    background-color: #25deff;
+
+.blog-description-02 > p {
+    margin: 0;
 }
-.blog-img-03{
+
+.blog-03 {
+}
+
+.blog-img-03 {
 
     width: 300px;
-    height: 250px;
+    height: 200px;
     background-color: white;
     margin: auto;
 }
-.blog-Title-03{
+
+.blog-Title-03 {
     margin: 10px 70px 0px 70px;
 }
-.blog-description-03{
+
+.blog-description-03 {
     margin: 0px 70px 0px 70px;
     font-size: 13px;
 }
-.blog-article>div{
+
+.blog-description-03 > p {
+    margin: 0;
+}
+
+.blog-article > div {
     width: 33.33%;
-    height: 320px;
+    height: 300px;
     display: inline-block;
     float: left;
 }
-.www{
-    background-color: bisque;
+
+.www {
+    margin: auto;
 }
-input[type=click]{
+
+button[type=button] {
     display: block;
-    margin:auto;
+    margin: auto;
     padding: 10px;
     background-color: black;
     color: white;
@@ -211,6 +438,7 @@ input[type=click]{
     width: 120px;
     border-radius: 50px;
 }
+
 /*Section Nine Start*/
 .nine {
     width: auto;
@@ -335,7 +563,8 @@ footer {
     height: 25px;
     display: inline-block;
 }
-.column-4>a>img{
+
+.column-4 > a > img {
     border-radius: 5px;
 }
 
