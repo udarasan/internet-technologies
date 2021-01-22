@@ -29,6 +29,36 @@ body {
     background-color: #403f3d;
 
 }
+.main-details{
+    position: absolute;
+    left: 10.45%;
+    top: 150px;
+    height: 360px;
+    width: 19%;
+    border: 12px solid #eeeeee;
+    background-color: white;
+}
+.wrap-image>img{
+    width: 100%;
+    height: 100%;
+
+}
+.my-details{
+    position: absolute;
+    top: 150px;
+    right: 5%;
+    width: 64%;
+    height:300px;
+    background-color: #ff253a;
+}
+.social-media{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 5%;
+    height: 300px;
+    background-color: #fed700;
+}
 
 /*Section Two Start*/
 .two {
@@ -43,25 +73,25 @@ body {
 }
 
 .two > div:nth-child(1) {
-    width: 25%;
+    width: 31%;
     height: 80px;
     float: left;
 }
 
 .two > div:nth-child(2) {
-    width: 25%;
+    width: 23%;
     height: 80px;
     float: left;
 }
 
 .two > div:nth-child(3) {
-    width: 25%;
+    width: 23%;
     height: 80px;
     float: left;
 }
 
 .two > div:nth-child(4) {
-    width: 25%;
+    width: 23%;
     height: 80px;
     float: left;
 }
@@ -69,17 +99,32 @@ body {
 /*Section Three Start*/
 .three {
     width: auto;
-    height: 350px;
+    height: 280px;
     background-color: #ffffff;
 
 }
 
 main > section:nth-child(3) > div {
-    background-color: #e9e9e9;
     width: 50%;
-    height: 350px;
+    height: 280px;
     float: left;
     display: inline-block;
+}
+
+.right-side-square {
+    width: 500px;
+    height: 140px;
+    margin: 0px 0px 0px 100px;
+    border: solid;
+    border-color: black;
+    background-color: #cccccc;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.right-side-square>p{
+    margin: 20px 20px 20px 20px;
+}
+.left-side-content>a:link{
+    color: black;
 }
 
 /*Section Four Start*/
@@ -90,6 +135,38 @@ main > section:nth-child(3) > div {
 
 }
 
+.four > div {
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+
+.four_section_title {
+}
+
+.four_section_title > h2 {
+    margin: 0px 0px 40px 100px;
+    padding-top: 20px;
+}
+
+.left-side-content {
+    margin-left: 140px;
+}
+
+.left-side-content > p {
+    margin-bottom: 20px;
+}
+
+.project-image > img {
+    margin: 50px 50px 50px 100px;
+}
+
+.project-image > img {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
 /* <<------------------Section Five Start------------------------>>> */
 .five {
     width: auto;
@@ -97,53 +174,64 @@ main > section:nth-child(3) > div {
     background-color: #ffffff;
 
 }
+
 .five_section_title {
 }
-.five_section_title>h2{
+
+.five_section_title > h2 {
     text-align: center;
     margin: 0px 0px 0px 0px;
     padding-top: 20px;
 }
-.five_section_title>p{
+
+.five_section_title > p {
     text-align: center;
     margin-bottom: 30px;
 }
-.skill-section{
+
+.skill-section {
     width: auto;
     height: 100px;
     margin-bottom: 10px;
 }
-.skill-section-1{
+
+.skill-section-1 {
     width: 50%;
     height: 100px;
     float: left;
     display: flex;
 }
-.skill-content-left{
+
+.skill-content-left {
     width: 86%;
     display: inline-block;
 }
-.skill-icon-left{
+
+.skill-icon-left {
     width: 14%;
     display: inline-block;
 }
-.skill-icon-left>img{
+
+.skill-icon-left > img {
     width: 50px;
     height: 50px;
     margin: 25px;
     border-radius: 100%;
 }
-.skill-content-left>h4{
+
+.skill-content-left > h4 {
     margin: 7px 0px 0px 0px;
     text-align: right;
 }
-.skill-content-left>p{
+
+.skill-content-left > p {
     margin: 5px 0px 0px 0px;
     text-align: right;
     display: block;
     font-size: 13px;
 }
-.progress-left{
+
+.progress-left {
     width: 80px;
     height: 6px;
     background-color: #fed700;
@@ -151,33 +239,39 @@ main > section:nth-child(3) > div {
     float: right;
     margin: 10px 0px 0px 0px;
 }
+
 /*--------------right side------*/
 
-.skill-content-right{
+.skill-content-right {
     width: 86%;
     display: inline-block;
 }
-.skill-icon-right{
+
+.skill-icon-right {
     width: 14%;
     display: inline-block;
 }
-.skill-icon-right>img{
+
+.skill-icon-right > img {
     width: 50px;
     height: 50px;
     margin: 25px;
     border-radius: 100%;
 }
-.skill-content-right>h4{
+
+.skill-content-right > h4 {
     margin: 7px 0px 0px 0px;
     text-align: left;
 }
-.skill-content-right>p{
+
+.skill-content-right > p {
     margin: 5px 0px 0px 0px;
     text-align: left;
     display: block;
     font-size: 13px;
 }
-.progress-right{
+
+.progress-right {
     width: 80px;
     height: 6px;
     background-color: #fed700;
@@ -185,7 +279,8 @@ main > section:nth-child(3) > div {
     float: left;
     margin: 10px 0px 0px 0px;
 }
-.skill-btn{
+
+.skill-btn {
     margin-top: 30px;
 }
 
@@ -431,7 +526,7 @@ main > section:nth-child(3) > div {
 button[type=button] {
     display: block;
     margin: auto;
-    padding: 10px;
+    padding: 6px;
     background-color: black;
     color: white;
     text-align: center;
@@ -478,7 +573,7 @@ button[type=button] {
 
 input[type=text] {
     width: 400px;
-    padding: 10px 10px 10px 40px;
+    padding: 6px 6px 6px 40px;
     border: 1px solid #ccc;
     border-radius: 50px 0px 0px 50px;
     margin-right: -5px;
@@ -486,7 +581,7 @@ input[type=text] {
 
 input[type=submit] {
     width: 120px;
-    padding: 10px;
+    padding: 6px;
     border: 1px solid #ccc;
     border-radius: 0px 50px 50px 0px;
     background-color: black;
