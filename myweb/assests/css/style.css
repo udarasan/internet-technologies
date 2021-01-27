@@ -2,8 +2,31 @@
 html {
     scroll-behavior: smooth;
 }
+.main-menu{
+    width: auto;
+    height: 82px;
+    background-color: #403f3d;
+}
+.WebName{
+    position: absolute;
+    left: 24px;
 
-header > nav > ul {
+}
+.WebName>a:link{
+    color: #fed700;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Mistral";
+
+}
+.WebName>a:visited{
+    color: #fed700;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Mistral";
+
+}
+.main-menu > nav > ul {
     position: absolute;
     right: 24px;
     font-size: 20px;
@@ -12,20 +35,19 @@ header > nav > ul {
 
 }
 
-header > nav > ul > li > a:link {
-
-    color: #fed700;
-    text-decoration: none;
-    animation-delay: 500ms;
-}
-
-header > nav > ul > li > a:visited {
+.main-menu  > nav > ul > li > a:link {
 
     color: #fed700;
     text-decoration: none;
 }
 
-header > nav > ul > li {
+.main-menu  > nav > ul > li > a:visited {
+
+    color: #fed700;
+    text-decoration: none;
+}
+
+.main-menu  > nav > ul > li {
     display: inline-block;
     cursor: pointer;
     font-family: "Ubuntu Light";
@@ -45,7 +67,7 @@ body {
 /*Section One Start*/
 #one {
     width: auto;
-    height: 450px;
+    height: 362px;
     background-color: #403f3d;
 
 }
@@ -582,7 +604,7 @@ main > section:nth-child(3) > div {
 #bottom-comma > img {
 
     width: 24px;
-    margin-left: 1300px;
+    margin-left: 1200px;
 }
 
 /*Section Eight Start*/
@@ -606,13 +628,6 @@ main > section:nth-child(3) > div {
     width: auto;
     height: 300px;
     margin: 30px 100px 0px 100px;
-}
-.blog-img-01:hover{
-
-    width: 300px;
-    height: 200px;
-    background-color: black;
-    opacity: 0.5%;
 }
 
 .blog-01 {
@@ -770,6 +785,22 @@ input[type=submit] {
     color: #e9e9e9;
     font-family: "Ubuntu Medium";
 }
+.scroll-to-top{
+    width: 40px;
+    height: 40px;
+    background-color: #fff3bb;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+}
+.scroll-to-top:hover{
+    background-color: #fed700;
+}
+.scroll-to-top>a>img{
+    width: 40px;
+    height: 40px;
+}
 
 
 footer {
@@ -878,4 +909,18 @@ div > a:link {
 footer > h1 {
     margin: 0;
     color: #eeeeee;
+}
+/*---------------Scroll-Bar Setup------------------------*/
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #fed700;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #000000;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #000000;  /* creates padding around scroll thumb */
 }
