@@ -1,0 +1,153 @@
+
+header {
+    position: relative;
+    height: 90px;
+    background: white;
+    box-shadow: 1px 2px 7px 4px rgba(33, 30, 30, 0.84);
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+
+header > img {
+    padding: 10px;
+    width: 245px;
+}
+
+.navigation {
+    position: absolute;
+    font-size: 20px;
+    right: 24px;
+    top: 0;
+    list-style: none;
+
+}
+
+.navigation > li {
+    display: inline-block;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-family:"Lucida Console", "Courier New", monospace;
+}
+.navigation > li :hover{
+    color: orange;
+}
+
+/*-----------------Side Menu----------------------*/
+
+main {
+    position: relative;
+}
+
+main .sideNav {
+    position: absolute;
+    width: 280px;
+    background: #8214bf;
+    top: 0;
+    bottom: 0;
+}
+
+/*---------------------------------------------------*/
+
+.content {
+    margin-left: 280px;
+    padding: 18px;
+}
+
+.content > div {
+    position: relative;
+    height: 300px;
+    border: 1px solid red;
+}
+
+.content > div > img{
+    position: absolute;
+    border: 1px solid green;
+    height: 100%;
+    width: calc((100%/3)*1);
+}
+.content > p:first-child{
+    padding-top: 60px;
+}
+/*---------------------images--------------------------*/
+
+.img > img:nth-child(1){
+    left: 0;
+}
+
+.img > img:nth-child(2){
+    left: calc((100%/3)*1);
+}
+
+.img > img:nth-child(3){
+    right: 0;
+}
+
+
+/*------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.logo img {
+    display: inline-block;
+    width: 250px;
+}
+.menu {
+    list-style: none;
+    font-size: 20px;
+}
+
+.menu > li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left:10px;
+    list-style: none;
+    font-family:"Lucida Console", "Courier New", monospace;
+
+}
+.menu > li :hover{
+    color: orange;
+}
+
+.menu li a{
+    color: #f1eded;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 35px;
+    right: 50px;
+    text-decoration: none;
+}
+
+/*-----------------------------------------------------*/
+footer {
+    height: 50px;
+    background: #6f6f6f;
+    position: relative;
+    bottom: 0;
+}
+
+footer > h3 {
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    right: 45%;
+    font-family:"Lucida Console", "Courier New", monospace;
+
+}
+
+
+
+

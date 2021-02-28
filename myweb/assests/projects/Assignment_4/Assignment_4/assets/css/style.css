@@ -1,0 +1,154 @@
+
+/*--------------------- Card 1 --------------------*/
+.card1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#title1 {
+    position: sticky;
+    background: #ec5a2e;
+    top: 0;
+    height: 70px;
+    margin: 0;
+    z-index: 2;
+}
+
+#title1 p {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family:"Gill Sans", sans-serif;
+    left: 25px;
+    top: 20px;
+    margin: 0;
+}
+#text1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family:"Gill Sans", sans-serif;
+    font-weight: bold;
+}
+
+/*--------------------- Card 2 --------------------*/
+
+
+.card2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #639ecb;
+}
+
+#title2 {
+    position: sticky;
+    background: #0d359a;
+    top: 0;
+    height: 70px;
+    margin: 0;
+    z-index: 2;
+}
+
+#title2 p {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family:"Gill Sans", sans-serif;
+    left: 25px;
+    top: 20px;
+    margin: 0;
+}
+#text2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family:"Gill Sans", sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+/*--------------------- Card 3 --------------------*/
+
+
+.card3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #666360;
+}
+
+#title3 {
+    position: sticky;
+    background: #322f2d;
+    top: 0;
+    height: 70px;
+    margin: 0;
+    z-index: 2;
+}
+
+#title3 p {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family:"Gill Sans", sans-serif;
+    left: 25px;
+    top: 20px;
+    margin: 0;
+}
+#text3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family:"Gill Sans", sans-serif;
+    font-weight: bold;
+}
+
+/*--------------------- Card 4 --------------------*/
+.card4 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #e85d17;
+}
+
+#title4 {
+    position: sticky;
+    background: #6d3007;
+    top: 0;
+    height: 70px;
+    margin: 0;
+    z-index: 2;
+}
+
+#title4 p {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family:"Gill Sans", sans-serif;
+    left: 25px;
+    top: 20px;
+    margin: 0;
+}
+#text4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family:"Gill Sans", sans-serif;
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+}

@@ -4129,6 +4129,28 @@ body::-webkit-scrollbar-thumb {
          width: 200px;
          height: 150px;
      }
+    .blog-Title-01 {
+        margin: 10px 40px 4px 40px;
+    }
+    .blog-description-01 {
+        margin: 0px 40px 0px 40px;
+        font-size: 13px;
+    }
+    .blog-Title-02 {
+        margin: 10px 40px 4px 40px;
+    }
+    .blog-description-02 {
+        margin: 0px 40px 0px 40px;
+        font-size: 13px;
+    }
+    .blog-Title-03 {
+        margin: 10px 40px 4px 40px;
+    }
+    .blog-description-03 {
+        margin: 0px 40px 0px 40px;
+        font-size: 13px;
+    }
+
     /*--------------------Section Nine start---------------*/
     .newsLetter {
         width: 50%;
@@ -4277,6 +4299,9 @@ button[type=project-button]:hover {
     transition-duration: 700ms;
 }
 
+button>a:visited{
+    color: white;
+}
 
 #projects-row-2{
     height: 300px;

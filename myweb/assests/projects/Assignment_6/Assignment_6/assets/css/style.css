@@ -1,0 +1,56 @@
+
+
+main {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 60px;
+    overflow:hidden;
+}
+
+main > section {
+    display: flex;
+    width: 500%;
+    height: 150%;
+    animation: slider 20s infinite;
+}
+
+section > div {
+    width: 100%;
+    height: 100%;
+}
+
+section>div:nth-child(1) {
+    background-size: cover;
+}
+
+section>div:nth-child(2) {
+    background-size: cover;
+}
+
+section>div:nth-child(3) {
+    background-size: cover;
+}
+
+section>div:nth-child(4) {
+    background-size: cover;
+}
+
+@keyframes slider {
+
+    25%{
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+    100%{
+
+    }
+}
