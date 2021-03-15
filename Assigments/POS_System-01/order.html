@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-theme2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Udara San</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="order.html">Order</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid  bg-theme2 py-2 ">
+        <h2 class="text-white text-center">POS System</h2>
+    </div>
+
+
+</header>
+<div class="container">
+    <div class="row g-2">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="container border p-2 mb-2">
+        <div class="text-end">
+            <p class="d-inline fs-4">Total :</p>
+            <p class="d-inline fs-1 ">00000.00</p>
+        </div>
+
+    </div>
+    <div class="row g-2">
+        <div class="col-lg-6 col-12">
+            <div class="p-3 border bg-light">
+                <div class="row">
+                    <div class="col">
+                        <label for="orderId" class="form-label">Order Id</label>
+                        <input type="text" class="form-control" id="orderId">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Order Date</label>
+                        <input type="date" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Customer Name</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Customer ID</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Name</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Salary</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Address</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div class="p-3 border bg-light">
+                <div class="row mb-2">
+                    <div class="col">
+                        <label for="inputState" class="form-label">Item</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Item Code</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Item Name</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Price</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">QTY On Hand</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col">
+                        <label for="inputEmail4" class="form-label">Order QTY</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer></footer>
+</body>
+</html>
