@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item Manage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-theme2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Udara San</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="order.html">Order</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid  bg-theme2 py-2 ">
+        <h2 class="text-white text-center">POS System</h2>
+    </div>
+
+
+</header>
+<div class="container">
+    <div class="row g-2">
+        <div class="col-lg-3 col-md-6 col-sm-6 ">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    <div class="row g-2">
+        <div class="col-lg-5 col-md-12">
+            <div class="p-3 border bg-light">
+                <form class="row g-3">
+                    <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label">Item ID</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label">Item Name</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputAddress" class="form-label">Item QTY</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-6">
+                        <label for="inputAddress2" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-primary">Delete</button>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="submit" class="btn btn-primary">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-12">
+            <div class="p-3 border bg-light">
+                <div class="container bg-light mt-3">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer></footer>
+</body>
+</html>

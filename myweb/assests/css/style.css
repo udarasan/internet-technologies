@@ -392,12 +392,14 @@ body {
 }
 
 .progress-left {
-    width: 60px;
+    width: 10px;
     height: 6px;
     background-color: #fed700;
     border-radius: 30px;
     float: right;
     margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    transition: 2s;
 }
 
 /*--------------right side------*/
@@ -432,11 +434,30 @@ body {
 }
 
 .progress-right {
-    width: 80px;
+    width: 10px;
     height: 6px;
     background-color: #fed700;
     border-radius: 30px;
     float: left;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer;
+    transition: 2s;
+}
+.progress-right:hover{
+    width: 100px;
+    height: 6px;
+    background-color: #fed700;
+    border-radius: 30px;
+    float: left;
+    margin: 10px 0px 0px 0px;
+
+}
+.progress-left:hover{
+    width: 100px;
+    height: 6px;
+    background-color: #fed700;
+    border-radius: 30px;
+    float: right;
     margin: 10px 0px 0px 0px;
 }
 
@@ -3855,7 +3876,9 @@ body::-webkit-scrollbar-thumb {
     }
 }
 /*----------------------------Lap Version Media Queries------------------------*/
-@media all and (min-width: 768px) and (max-width: 1024px){ /*--------------------Section One start---------------*/
+
+/*--------------------Section One start---------------*/
+@media all and (min-width: 768px) and (max-width: 1024px){
     #one {
         width: auto;
         height: 450px;
@@ -4080,7 +4103,9 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
         border-radius: 23px;
     }
+
     /*--------------------Section Seven start---------------*/
+
     #top-comma > img {
         width: 24px;
         height: 24px;
@@ -4099,7 +4124,9 @@ body::-webkit-scrollbar-thumb {
         left: 640px;
         margin: auto;
     }
+
     /*--------------------Section Eight start---------------*/
+
     .blog-article {
         width: auto;
         height: 300px;
@@ -4121,6 +4148,7 @@ body::-webkit-scrollbar-thumb {
         width: 200px;
         height: 150px;
     }
+
     .blog-img-02>img{
         width: 200px;
         height: 150px;
@@ -4152,6 +4180,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     /*--------------------Section Nine start---------------*/
+
     .newsLetter {
         width: 50%;
         display: inline-block;
@@ -4172,12 +4201,10 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-
-
-
 /*----------------------------project-page-css------------------------*/
 /*----------------------------project-page-css------------------------*/
 /*----------------------------project-page-css------------------------*/
+
 .pageTitle{
     width: auto;
     height: 100px;
@@ -4209,7 +4236,6 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     border: solid 1px #403f3d;
-
 }
 .project-type{
     width: 100px;
