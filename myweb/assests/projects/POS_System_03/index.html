@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assests/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-theme2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Udara San</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="#index">
+                            <div id="btnIndex">Home</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#customer">
+                            <div id="btnCustomer">Customer</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#item">
+                            <div id="btnItem">Item</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#order">
+                            <div id="btnOrder">Order</div>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid  bg-theme2 py-2 ">
+        <h2 class="text-white text-center">POS System</h2>
+    </div>
+
+
+</header>
+<div class="container">
+    <div class="row g-2">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="p-3 border bg-theme5">
+                <div class="">Order Count</div>
+                <div class="text-end fs-1">00000.00</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Index page content-->
+<div id="index">
+    <div class="container mt-3">
+        <div class="row g-2">
+            <div class="col-lg-6 col-md-12">
+                <div class="p-3 border bg-light">
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="p-3 border bg-light">
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                    Custom column padding
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Customer page content-->
+<div id="customer">
+    <div class="container mt-3">
+        <div class="row g-2">
+            <div class="col-lg-5 col-md-12">
+                <div class="p-3 border bg-light">
+                    <form class="row g-3">
+
+                        <div class="col-12">
+                            <label for="cid" class="form-label">Customer ID</label>
+                            <input type="text" class="form-control" id="cid"
+                                   placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="fName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="fName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lName" class="form-label">Second Name</label>
+                            <input type="text" class="form-control" id="lName">
+                        </div>
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="state" class="form-label">State</label>
+                            <input type="text" class="form-control" id="state" placeholder="1234 Main St">
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary saveCustomer">Save</button>
+                            <button type="submit" class="btn btn-primary updateCustomer">Update</button>
+                            <button type="submit" class="btn btn-primary deleteCustomer">Delete</button>
+                            <button type="submit" class="btn btn-primary searchCustomer">Search</button>
+                            <button type="submit" class="btn btn-primary clearCustomer">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="p-3 border bg-light">
+                    <div class="container bg-light mt-3">
+                        <table class="table customerTable table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">CID</th>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Last Name</th>
+                                <th scope="col">Address</th>
+                                <th scope="col">City</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Item page content-->
+<div id="item">
+    <div class="container mt-3">
+        <div class="row g-2">
+            <div class="col-lg-5 col-md-12">
+                <div class="p-3 border bg-light">
+                    <form class="row g-3">
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Item ID</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputPassword4" class="form-label">Item Name</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress" class="form-label">Item QTY</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-6">
+                            <label for="inputAddress2" class="form-label">Price</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                   placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button type="submit" class="btn btn-primary">Update</button>
+                            <button type="submit" class="btn btn-primary">Delete</button>
+                            <button type="submit" class="btn btn-primary">Search</button>
+                            <button type="submit" class="btn btn-primary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="p-3 border bg-light">
+                    <div class="container bg-light mt-3">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Order page content-->
+<div id="order">
+    <div class="container mt-3">
+        <div class="container border p-2 mb-2">
+            <div class="text-end">
+                <p class="d-inline fs-4">Total :</p>
+                <p class="d-inline fs-1 ">00000.00</p>
+            </div>
+
+        </div>
+        <div class="row g-2">
+            <div class="col-lg-6 col-12">
+                <div class="p-3 border bg-light">
+                    <div class="row">
+                        <div class="col">
+                            <label for="orderId" class="form-label">Order Id</label>
+                            <input type="text" class="form-control" id="orderId">
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Order Date</label>
+                            <input type="date" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Customer Name</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Customer ID</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Name</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Salary</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Address</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="p-3 border bg-light">
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="inputState" class="form-label">Item</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Item Code</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Item Name</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Price</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">QTY On Hand</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Order QTY</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h5>Udara</h5>
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script>
+
+
+    var customer = document.getElementById("customer");
+    var item = document.getElementById("item");
+    var order = document.getElementById("order");
+    var index = document.getElementById("index");
+
+    customer.style.display = "none";
+    item.style.display = "none";
+    order.style.display = "none";
+    index.style.display = "block";
+
+    var btnIndex = document.getElementById("btnIndex");
+    var btnCustomer = document.getElementById("btnCustomer");
+    var btnItem = document.getElementById("btnItem");
+    var btnOrder = document.getElementById("btnOrder");
+
+    btnIndex.addEventListener("click", function () {
+        customer.style.display = "none";
+        item.style.display = "none";
+        order.style.display = "none";
+        index.style.display = "block";
+    });
+    btnCustomer.addEventListener("click", function () {
+        customer.style.display = "block";
+        item.style.display = "none";
+        order.style.display = "none";
+        index.style.display = "none";
+    });
+
+    btnItem.addEventListener("click", function () {
+        customer.style.display = "none";
+        item.style.display = "block";
+        order.style.display = "none";
+        index.style.display = "none";
+    });
+
+    btnOrder.addEventListener("click", function () {
+        customer.style.display = "none";
+        item.style.display = "none";
+        order.style.display = "block";
+        index.style.display = "none";
+    });
+
+
+    $('.saveCustomer').click(function () {
+
+        var cid = $('#cid').val();
+        var fName = $('#fName').val();
+        var lName = $('#lName').val();
+        var address = $('#address').val();
+        var state = $('#state').val();
+
+        $('.customerTable>tbody').append('<tr><td>' + cid + '</td><td>' + fName + '</td><td>' + lName + '</td><td>' + address + '</td><td>' + state + '</td></tr>');
+
+        $('.customerTable>tbody>tr').click(function (){
+            let id= $(this).children('td:eq(0)').text();
+            let name= $(this).children('td:eq(1)').text();
+            let address= $(this).children('td:eq(2)').text();
+            let salary= $(this).children('td:eq(3)').text();
+            console.log(id,name,address,salary);
+        });
+
+
+    });
+
+    $(document).on('mousemove',function (eventOb) {
+        // console.log(eventOb.pageX,eventOb.pageY);
+        $('h5').css({
+            'position':'absolute',
+            'left':eventOb.pageX,
+            'top':eventOb.pageY
+        });
+    })
+
+   /* $('.customerTable>tbody>tr').click(function () {
+        let id = $($(this).children().get(0)).text();
+        let name = $($(this).children().get(1)).text();
+        let address = $($(this).children().get(2)).text();
+        let salary = $($(this).children().get(3)).text();
+        console.log(id, name, address, salary);
+    });*/
+
+    /*Eazy Way*/
+
+
+
+</script>
+
+<footer></footer>
+</body>
+</html>
+
