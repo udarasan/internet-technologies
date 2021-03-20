@@ -17,6 +17,7 @@ $('#btnAdd').click(function () {
     let res = addOrder(OID, orderDate, customerName, customerCID, states, address, itemCode, oItemName, oPrice, oQTY, total);
     $('#subTotal').text(total);
     makeTotal();
+    stockManage();
 });
 
 function addOrder(OID, orderDate, customerName, customerCID, states, address, itemCode, oItemName, oPrice, oQTY, total) {
@@ -62,7 +63,7 @@ function loadItemID() {
 
     for (var c of getAllItem()) {
         $('#inputItem').append(`<option value="${c.getItemID()}">${c.getItemID()}</option>`);
-        console.log("sdsd");
+
     }
 
 }
@@ -75,7 +76,7 @@ $('#inputItem').change(function () {
         $('#itemCode').val(selectedItem.getItemID());
         $('#oItemName').val(selectedItem.getItemName());
         $('#oPrice').val(selectedItem.getItemPrice());
-        $('#oQTY').val(selectedItem.getItemQTY());
+        $('#qtyUpdater').text(selectedItem.getItemQTY());
     } else {
 
     }
@@ -157,6 +158,22 @@ function OrderIDAutoMake() {
 
 
 
+}
+function stockManage() {
+    let qtyOnHand=$('#qtyUpdater').text();
+    let orderQty=$('#oQTY').val();
+    let updateQty=qtyOnHand-orderQty;
+    $('#qtyUpdater').text(updateQty);
+    console.log(updateQty);
+
+    let itemID = $('#itemCode').val();
+    let itemName = $('#oItemName').val();
+    let itemQTY = $('#qtyUpdater').text();
+    let itemPrice = $('#oPrice').val();
+
+    updateItem(itemID, itemName, itemQTY, itemPrice);
+
+    loadAllItemToTheTable();
 }
 
 function printOrder() {
