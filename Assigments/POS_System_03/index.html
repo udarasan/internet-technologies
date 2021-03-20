@@ -51,7 +51,7 @@
 
 
 </header>
-<div class="container">
+<div class="container"id="secondHeader">
     <div class="row g-2">
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="p-3 border bg-theme5">
@@ -111,39 +111,40 @@
 <div id="customer">
     <div class="container mt-3">
         <div class="row g-2">
-            <div class="col-lg-5 col-md-12">
-                <div class="p-3 border bg-light">
+            <div class="col-lg-5 col-md-12"id="customerForm">
+                <div class="p-3 border bg-light shadow p-3 mb-5 bg-body rounded">
                     <form class="row g-3">
 
                         <div class="col-12">
-                            <label for="cid" class="form-label">Customer ID</label>
+                            <label for="cid" class="form-label" id="lblCid">Customer ID</label>
                             <input type="text" class="form-control" id="cid">
                         </div>
                         <div class="col-md-6">
-                            <label for="fName" class="form-label">First Name</label>
+                            <label for="fName" class="form-label"id="lblFName">First Name</label>
                             <input type="text" class="form-control" id="fName">
                         </div>
                         <div class="col-md-6">
-                            <label for="lName" class="form-label">Second Name</label>
+                            <label for="lName" class="form-label"id="lblSName">Second Name</label>
                             <input type="text" class="form-control" id="lName">
                         </div>
                         <div class="col-12">
-                            <label for="address" class="form-label">Address</label>
+                            <label for="address" class="form-label"id="lblAddress">Address</label>
                             <input type="text" class="form-control" id="address">
                         </div>
 
                         <div class="col-md-6">
-                            <label for="state" class="form-label">State</label>
+                            <label for="state" class="form-label"id="lblState">State</label>
                             <input type="text" class="form-control" id="state">
 
                         </div>
 
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary "id="saveCustomer">Save</button>
-                            <button type="submit" class="btn btn-primary "id="updateCustomer" >Update</button>
-                            <button type="submit" class="btn btn-primary "id="deleteCustomer">Delete</button>
-                            <button type="submit" class="btn btn-primary "id="searchCustomer">Search</button>
-                            <button type="submit" class="btn btn-primary "id="clearCustomer">Clear</button>
+                            <button type="button" class="btn bg-theme2 text-white "id="saveCustomer">Save</button>
+                            <button type="button" class="btn bg-theme2 text-white "id="updateCustomer" >Update</button>
+                            <button type="button" class="btn bg-theme2 text-white "id="deleteCustomer">Delete</button>
+                            <button type="button" class="btn bg-theme2 text-white "id="searchCustomer">Search</button>
+                            <button type="button" class="btn bg-theme2 text-white "id="clearCustomer">Clear</button>
+                            <button type="button" class="btn bg-theme2 text-white "id="printCustomer">Print</button>
                         </div>
                     </form>
                 </div>
@@ -151,7 +152,7 @@
             <div class="col-lg-7 col-md-12">
                 <div class="p-3 border bg-light">
                     <div class="container bg-light mt-3">
-                        <table class="table customerTable table-bordered table-hover">
+                        <table class="table customerTable table-bordered table-hover"id="cusTable">
                             <thead>
                             <tr>
                                 <th scope="col">CID</th>
@@ -180,36 +181,36 @@
     <div class="container mt-3">
         <div class="row g-2">
             <div class="col-lg-5 col-md-12">
-                <div class="p-3 border bg-light">
+                <div class="p-3 border bg-light shadow p-3 mb-5 bg-body rounded">
                     <form class="row g-3">
                         <div class="col-md-12">
-                            <label for="itemID" class="form-label">Item ID</label>
+                            <label for="itemID" class="form-label"id="lblID">Item ID</label>
                             <input type="text" class="form-control" id="itemID">
                         </div>
                         <div class="col-md-12">
-                            <label for="itemName" class="form-label">Item Name</label>
+                            <label for="itemName" class="form-label"id="lblItemName">Item Name</label>
                             <input type="text" class="form-control" id="itemName">
                         </div>
                         <div class="col-6">
-                            <label for="itemQTY" class="form-label">Item QTY</label>
+                            <label for="itemQTY" class="form-label"id="lblItemQty">Item QTY</label>
                             <input type="text" class="form-control" id="itemQTY">
                         </div>
                         <div class="col-6">
-                            <label for="price" class="form-label">Price</label>
+                            <label for="price" class="form-label"id="lblPrice">Price</label>
                             <input type="text" class="form-control" id="price">
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary"id="saveItem">Save</button>
-                            <button type="submit" class="btn btn-primary"id="updateItem">Update</button>
-                            <button type="submit" class="btn btn-primary"id="deleteItem">Delete</button>
-                            <button type="submit" class="btn btn-primary"id="searchItem">Search</button>
-                            <button type="submit" class="btn btn-primary"id="clearItem">Clear</button>
+                            <button type="button" class="btn bg-theme2 text-white"id="saveItem">Save</button>
+                            <button type="button" class="btn bg-theme2 text-white"id="updateItem">Update</button>
+                            <button type="button" class="btn bg-theme2 text-white"id="deleteItem">Delete</button>
+                            <button type="button" class="btn bg-theme2 text-white"id="searchItem">Search</button>
+                            <button type="button" class="btn bg-theme2 text-white"id="clearItem">Clear</button>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="col-lg-7 col-md-12">
-                <div class="p-3 border bg-light">
+                <div class="p-3 border bg-light ">
                     <div class="container bg-light mt-3">
                         <table class="table table-bordered table-hover"id="tblItem">
                             <thead>
@@ -234,14 +235,14 @@
 <!--Order page content-->
 <div id="order">
     <div class="container mt-3">
-        <div class="container border p-2 mb-2">
+        <div class="container border p-2 mb-3 shadow p-3  bg-body rounded">
             <div class="text-end">
-                <p class="d-inline fs-4">Total :</p>
-                <p class="d-inline fs-1 ">00000.00</p>
+                <p class="d-inline fs-4"id="sdf">Total :</p>
+                <p class="d-inline fs-1 "id="total"></p>
             </div>
 
         </div>
-        <div class="container border p-2 mb-2">
+        <div class="container border p-2 mb-3 shadow p-3  bg-body rounded">
             <div class="text-end">
                 <p class="d-inline fs-5" id="fds">Sub Total :</p>
                 <p class="d-inline fs-2 "id="subTotal">00000<p class="d-inline fs-2">.00</p></p>
@@ -269,12 +270,13 @@
                 </div>
             </div>
                 <div class="col-12 mt-4 text-end">
-                    <button class="btn btn-success" id="btnSubmitOrder" type="button">Purchase</button>
+                    <button class="btn bg-theme5" id="btnPrintOrder" type="button">Print</button>
+                    <button class="btn bg-theme2 text-white" id="btnSubmitOrder" type="button">Purchase</button>
                 </div>
             </div>
 
         <div class="row g-2">
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12"id="orderFormCustomerForm">
                 <div class="p-3 border bg-light">
                     <div class="row">
                         <div class="col">
@@ -312,7 +314,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-12">
+            <div class="col-lg-6 col-12"id="orderFormItemForm">
                 <div class="p-3 border bg-light">
                     <div class="row mb-2">
                         <div class="col">

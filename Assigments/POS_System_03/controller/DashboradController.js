@@ -1,27 +1,37 @@
 hideAll();
+
 function hideAll() {
-$('#index,#customer,#item,#order').css('display','none');
+    $('#index,#customer,#item,#order').css('display', 'none');
 
 }
+
 $('#btnIndex').click(function () {
     hideAll();
-   $('#index').css('display','block');
+    $('#index').css('display', 'block');
 });
 $('#btnCustomer').click(function () {
     hideAll();
-    $('#customer').css('display','block');
+    CustomerIDAutoMake();
+    $('#customer').css('display', 'block');
 });
 $('#btnItem').click(function () {
     hideAll();
-
-    $('#item').css('display','block');
+    ItemIDAutoMake();
+    $('#item').css('display', 'block');
 });
 $('#btnOrder').click(function () {
     hideAll();
     //Date Generator
+    $('#oCid').empty();
+    loadCustomerID();
+    $('#inputItem').empty();
     loadItemID();
     GetTodayDate();
-    $('#order').css('display','block');
+    OrderIDAutoMake();
+
+
+    $('#order').css('display', 'block');
+    /* $('#orderId').val('OID000');*/
 
 });
 
